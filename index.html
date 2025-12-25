@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Планувальник завдань</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<header class="header">
+    <h1>🗂 Планувальник завдань</h1>
+    <button id="themeToggle">🌙</button>
+</header>
+
+<main class="container">
+    <!-- Форма додавання завдання -->
+    <section class="task-form">
+        <input type="text" id="title" placeholder="Назва завдання">
+        <input type="date" id="deadline">
+        <select id="priority">
+            <option value="low">Низький пріоритет</option>
+            <option value="medium">Середній пріоритет</option>
+            <option value="high">Високий пріоритет</option>
+        </select>
+        <input type="text" id="category" placeholder="Категорія / Проєкт">
+        <button id="addTask">➕ Додати</button>
+    </section>
+
+    <!-- Пошук і фільтр -->
+    <section class="filters">
+        <input type="text" id="search" placeholder="🔍 Пошук завдань">
+        <select id="statusFilter">
+            <option value="all">Усі</option>
+            <option value="active">Активні</option>
+            <option value="completed">Виконані</option>
+        </select>
+    </section>
+
+    <!-- Список завдань -->
+    <ul id="taskList" class="task-list"></ul>
+</main>
+
+<footer class="footer">
+    <p>© 2025 Плануй ефективно</p>
+</footer>
+
+<script src="app.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
